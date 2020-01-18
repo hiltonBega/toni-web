@@ -1,0 +1,17 @@
+
+<div class="bookone">
+<a class=""
+[routerLink]="[index]"
+routerLinkActive="primary_active primary-nav "
+>
+<span ><img
+[src]="book.imagePath"
+class="bookone-imagee row-2">
+</span>
+<div class="row">
+ <div class="row-2" ></div>   
+<h3  class="bookone-lis " [title]="book.author + ' details'">
+Author:</h3> <p class="bookone-lis-po"> {{ book.author }} </p>
+<div class="row-2"></div>
+<h3 class="bookone-lis"> Description:</h3> <p class="bookone-lis-po">  {{book.description}}</p>
+</div></a></div>

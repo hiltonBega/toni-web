@@ -1,0 +1,28 @@
+@import "../../styles/variabla";
+
+.mylistedit{ 
+    margin: 10px 10px 80px 10px;
+
+ &_text{
+   width: 90%;
+   margin: 10px 50px 30px 10px;
+   @include medium  {
+     width: 40%;
+   margin: 10px 50px 30px 10px;   
+ }
+ }
+ &_number{ 
+    width: 90%;
+    margin: 10px 50px 30px 10px; 
+    @include medium  {
+     width: 10%;
+   margin: 10px 10px 30px 10px;   
+  }
+ }
+ &-red{
+   background-color: red;
+ }
+ &-gre{
+   background-color: seagreen;
+ }
+}

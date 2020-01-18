@@ -1,0 +1,68 @@
+@import "../../styles/variabla";
+
+.bookedit{
+       
+    background-color: white;
+   margin: 3px 3px 3px 6px;
+    padding: 10px;
+    overflow: auto;
+    @media screen and (min-width: $at-medium) {
+      padding: 40px; 
+      margin: 5px 10px 3px 20px; 
+    }
+     &-ima{
+        width: 80%;
+        margin: 5px 3px 2px 20px;
+        @media screen and (min-width: $at-medium) {
+            border: $color2 solid;
+        width: 60%;
+        margin: 5px 3px 2px 20px;
+        padding:  6px; 
+        }
+     }
+     &-tex{
+        color: black;
+        margin: 2px;
+        padding: 2px;
+        font-size: 13px;
+         font-weight: 100;
+        @media screen and (min-width: $at-medium) {
+        font-weight: 200;
+        font-size: 15px;
+        padding: 5px 12px 3px 17px;
+        margin: 5px 16px 5px 18px; 
+        }
+
+     }
+     &-auth{
+        font-weight: 600 ;
+        font-size: 25px;
+        padding: 0px;
+        margin: 0px; 
+        @media screen and (min-width: $at-medium) {
+            font-weight: 600 ;
+        font-size: 35px;
+         }
+      }
+     &-cmim{
+         color: $color3;
+         font-weight: 100;
+        font-size: 15px;
+        @media screen and (min-width: $at-medium) {
+            font-weight: 300;
+            font-size: 25px;
+         }
+     }
+     &-btn{
+        font-size: 11px;
+        font-weight: 100;
+        padding: 9px;
+        margin: 1.5px;
+         @media screen and (min-width: $at-medium) {
+            font-size: 12px;
+         font-weight: 200;   
+         }
+      
+     }
+
+}

@@ -1,0 +1,23 @@
+
+$at-small: 571px;
+$at-medium: 750px;
+$at-large: 1025px;
+
+$color1:#9aa7b1;
+$color2:#2f5572;
+$color3:#d59541;
+$color4:#82bce9;
+$colortop:#333;
+$colortopm:rgb(60, 82, 46);
+
+@mixin medium {
+    @media screen and (min-width: $at-medium) {
+        @content;
+    
+   }}
+
+   @mixin large {
+    @media screen and (min-width: $at-large) {
+        @content;
+   }
+}

@@ -1,0 +1,50 @@
+<div class="bookedit">
+    <div class="row">
+        <form  [formGroup]="bookForm" (ngSubmit)="onSubmit()">  
+
+            <div class="row-2i">
+            <div >
+                <img [src]="imagePath.value" alt="" class="bookedit-ima" >
+            </div>
+           </div>
+
+           <div class="row-2i">
+           <div class="">
+                <label for="imagePath">Image url</label>
+                <input class="form-text-t"   id="imagePath" formControlName="imagePath"  #imagePath>
+            </div>
+           <div class="">
+                <label class="" for="author">Author</label>
+                <input class="form-text-t" id="author" formControlName="author" >
+            </div>
+            <div class="">
+                <label for="description" >Description (short)</label>
+                <textarea class="form-text-t"   id="description" formControlName="description">
+                    </textarea>
+            </div>
+            <div class="">
+                <label for="des" >Description (long)</label>
+                <textarea class="form-text-t"   id="des" formControlName="des">
+                    </textarea>
+            </div>
+
+            <div class="" formArrayName="libra" >
+                <div  class=""
+                *ngFor="let liberCtrl of bookForm.get('libra').controls; let i = index"
+                [formGroupName]="i"> 
+               
+                Title<input
+                type="text"
+                class="form-text-t"
+                formControlName="name">Price
+               <input
+                class="form-text-t"
+                formControlName="price">
+            </div></div></div>  
+            <div >
+                <button type="submit" class="btn btn-yell" [disabled]="!bookForm.valid" >Save</button>
+                <button type="button" class="btn btn-red" (click)="onCancel()">Cancel</button>
+            </div>     
+        </form>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../src/app/styles/sip";
+@import "../src/app/styles/btn";
+@import "../src/app/styles/row";
+@import "../src/app/styles/variabla";
+@import "../src/app/styles/shkrime";
+
+
+* {
+  padding: 0px;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #616161;
+  & a{
+    text-decoration: none;
+  }
+ }

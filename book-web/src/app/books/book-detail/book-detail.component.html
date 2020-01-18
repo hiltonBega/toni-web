@@ -1,0 +1,33 @@
+<div class="book-detail ">
+  <div class="row" >
+<div class="row-2i">
+  <img [src]=" book.imagePath" alt="" class="book-detail-ima" >
+</div>
+<div class="book-detail-t">
+  <div class="">
+
+    <button (click)="onAddToList()"
+     class="btn book-detail-btn" >Add To List</button>
+    <button (click)="onEditBook()" class="btn book-detail-btn" 
+    [title]="'You need to Login first'"  >Edit Book</button>
+    <button  (click)="onDeleteBook()"
+     class="btn book-detail-btn">Delete Book</button>  
+    
+    
+</div>
+<h1 class="book-detail-auth">{{ book.author }}</h1>
+
+
+<div class="book-detail-tex">
+   {{ book.des}}
+</div>
+<div class="row"
+
+     *ngFor="let liber of book.libra">
+   <h1 class="book-detail-cmim"> {{liber.name}}</h1> {{liber.price}}$
+
+
+
+</div>
+</div>
+</div>

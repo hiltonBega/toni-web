@@ -1,0 +1,32 @@
+<div class="top">
+    <div class="top-sip  ">
+ 
+      <div class="menu">
+        <li routerLink="/"  class="top-mybook">MyBook</li>
+     <div class="top-si">
+
+      <button (click)="toggleCollapse()" class="top-toggle" type="button">&#9776;</button>
+    
+      <div class="" *ngIf="admService.isAuthen()" >
+       
+        <button (click)="onFatchData()" class=" top-bttn top-bttn-f"[title]="'Fatch Data'"></button>   
+        <button  (click)="onSaveData()" class=" top-bttn top-bttn-g"[title]="'Save Data'" ></button>
+      </div>
+       
+   <div *ngIf="show" >
+             <nav >
+            <li routerLinkActive="active"> <a  class="top-mylist "routerLink="/books">Books</a></li>
+            <li routerLinkActive="active"> <a  class="top-mylist  " routerLink="/mylist">My List</a></li>
+            <li routerLinkActive="ative" ><a *ngIf="admService.isAuthen()"
+               class="top-mylis"
+
+              (click)="onLogout()" 
+              >Logout </a></li>
+              </nav> 
+            <ng-template  [ngIf]="!admService.isAuthen()">
+            <li routerLinkActive="active" ><a class="top-mylis"  routerLink="/singup">Register</a></li>
+            <li routerLinkActive="active" ><a class="top-mylis" routerLink="/singin">Login</a></li>
+          </ng-template>
+        </div></div>   
+        </div></div>
+

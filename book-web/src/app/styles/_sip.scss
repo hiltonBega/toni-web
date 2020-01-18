@@ -1,0 +1,73 @@
+@import "../styles/variabla";
+
+
+.sip { 
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+  
+ @include medium {
+      margin: 1.3rem 0.8rem 1rem 0.8rem;
+  
+ }
+ @include large {
+    margin: 1.6rem 4rem 1rem 4rem;
+    
+    &-p{
+    margin: 1.6rem 0.1rem 0.1rem 0.1rem;
+    padding: 0rem;
+   }
+  }
+}
+
+.form-text{
+    width: 80%;
+    background-color:$color1;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+    @include medium {
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 50%;
+   }
+
+ &_t{
+  background-color:$color4;
+ }  
+
+&-t { 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0px 16px 0px;
+    border: 1px solid rgb(206, 191, 191);
+    border-radius: 4px;
+    box-sizing: border-box;
+    &:focus{
+        background-color:lightblue;
+
+    
+    }
+   }
+ .btn-1{
+    background-color: seagreen;
+    margin-left: 25%;
+    @include medium{
+        margin-left: 0;
+   }
+ }
+ .btn-2{
+  background-color: rgb(252, 53, 53);
+  margin-left: 25%;
+  @include medium{
+      margin-left: 0;
+ }
+} 
+ 
+}  
+
+
+
+

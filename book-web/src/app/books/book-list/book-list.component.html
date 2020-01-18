@@ -1,0 +1,10 @@
+<div class="row">
+    <button class="btn-btn btn"  (click)="onNewBook()" [title]="'You need to Login first'"  >New Book</button>
+</div>  <div class="row">
+    <app-book-one 
+
+    *ngFor="let bookel of books; let i = index"
+    [book]="bookel"
+    [index]="i"></app-book-one>
+ 
+</div>

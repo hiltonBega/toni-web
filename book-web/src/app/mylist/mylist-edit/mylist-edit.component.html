@@ -1,0 +1,21 @@
+
+<div class="row mylistedit">
+  <form (ngSubmit)="onAddItem(f)" #f="ngForm">
+   <div class="row">
+     <label for="name">Name</label>
+     <input type="text" id="name"  class="mylistedit_text form-text-t"  name="name"  
+     ngModel  required>
+
+
+    <label for="price">Price</label>
+    <input type="number" id="price"  class="mylistedit_number form-text-t" name="price"  
+    ngModel  required  [pattern]="'^[0-9]+[0-9]*$'"> 
+ </div>
+   <div>
+     <button class="btn mylistedit-gre" type="submit" [disabled]="!f.valid">{{ editMode ? 'Update' : 'Add' }}</button>
+     <button class=" btn mylistedit-red "type="button" (click)="onDelete()" *ngIf="editMode" >Delete</button>
+     <button class=" btn "  type="button"  (click)="onClear()">Clear</button>
+   </div>
+  </form>
+</div>
+

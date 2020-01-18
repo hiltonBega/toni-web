@@ -1,0 +1,23 @@
+
+<div class="sip">
+  <div class="row">
+    <div class="mylist"> 
+      <h2 class="shkrim_titull">The Books <strong class="shkrim_titull_t">List</strong></h2>
+
+  <app-mylist-edit></app-mylist-edit >
+   
+
+<div>
+<hr>
+<ul class="mylist_hr">
+  <a 
+  *ngFor="let liber of libra; let i =index"
+  (click)="onEditItem(i)">
+  <p class=" mylist-group" >
+  {{ liber.name }} ({{ liber.price }}$)</p>
+</a>
+</ul>
+</div>
+</div>
+</div>
+</div>

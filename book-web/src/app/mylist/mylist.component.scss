@@ -1,0 +1,29 @@
+@import "../styles/variabla";
+
+.mylist{
+    background-color: $color1;
+    padding: 12px 13px 300px 12px;
+    border-radius: 5px;
+
+    @include medium  {
+    padding: 2px 3px 3px 2px;
+    
+   }
+   @media screen and (min-width: $at-large) {
+    padding: 12px 13px 13px 12px;
+
+     
+    }
+ 
+    &_hr{
+        margin: 20px 10px 40px 10px;
+    }
+
+    &-group{
+
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    padding: 12px;
+      }
+}

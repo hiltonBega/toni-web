@@ -1,0 +1,25 @@
+@import "../styles/variabla";
+
+.shkrim{
+     
+    &_titull{
+        font-size: 32px;
+        color: white;
+        text-align: center;
+        padding: 15px 0 20px 0;
+        
+    }
+    &_titull_t{
+        font-size: 34px;
+        color: $color2;
+        text-align: center;
+        margin: 20px 0px;
+        @include medium {
+            font-size: 54px;
+            color: $color2;
+            text-align: center;
+          }
+
+    }
+    
+}
